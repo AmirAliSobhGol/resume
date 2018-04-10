@@ -25,8 +25,8 @@ const Experience = () => (
     <div className="m-t-10">
       <List>
         <li>Developed and managed for 3+ web applications using modern frameworks</li>
-        <li>Constantly improved tooling for a more reliable, automated, efficient development</li>
-        <li>Worked collaboratively with the clients to achieve satisfactory results on time</li>
+        <li>Constantly improved tooling for a more reliable, automated and efficient development</li>
+        <li>Worked collaboratively with the clients to achieve satisfactory results on time and budget</li>
       </List>
     </div>
   </div>

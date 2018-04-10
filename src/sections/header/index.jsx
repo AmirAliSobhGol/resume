@@ -20,7 +20,7 @@ const Header = () => (
   <div>
     <Fullname>Amirali Sobhgol</Fullname>
     <Row className="flex">
-      <span><FaPhone/> +989121551123</span>
+      <span><FaPhone/> +989021551123</span>
       <span><FaEnvelope/> amiralisobhgol@gmail.com</span>
       <span><FaMapMarker/> Tehran, Niavaran</span>
     </Row>

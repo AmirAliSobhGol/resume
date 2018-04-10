@@ -13,10 +13,9 @@ const Column = style.div`
   padding:0 15px;
 `;
 
-const skills = [
+const frontendSkills = [
   {title: 'React', proficiency: 90},
-  {title: 'Angular 2+', proficiency: 80},
-  {title: 'Angular.js', proficiency: 80},
+  {title: 'Angular 1 & 2+', proficiency: 80},
   {title: 'Sass', proficiency: 75},
   {title: 'Webpack', proficiency: 80},
   {title: 'Git', proficiency: 70},
@@ -25,10 +24,8 @@ const skills = [
   {title: 'Typescript', proficiency: 90},
   {title: 'Python/Django', proficiency: 65},
   {title: 'Node.js', proficiency: 90},
-  {title: 'Elasticsearch', proficiency: 60},
   {title: 'Linux', proficiency: 70},
   {title: 'Docker', proficiency: 75},
-  {title: 'Kubernetes', proficiency: 70},
 ];
 
 const Skill = () => (
@@ -37,7 +34,7 @@ const Skill = () => (
       Skills
     </h1>
     <Grid>
-      {skills.map(skill => (
+      {frontendSkills.map(skill => (
         <Column>
           <SkillBar proficiency={skill.proficiency} title={skill.title}/>
           <Separator className="m-t-20"/>

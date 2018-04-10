@@ -8,7 +8,7 @@ const AppContainer = styled.div`
   background-image: url(${LetterBackground});
   width: 100vw;
   height: 100vh;
-  padding: 24px
+  padding: 32px
 `;
 
 class App extends Component {
