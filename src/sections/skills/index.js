@@ -1,7 +1,8 @@
 import React from 'react';
 import style from 'styled-components';
-import SkillBar from './skillbar'
+import SkillBar from './skillbar';
 import Separator from '../../components/separator';
+import { frontendSkillList, backendSkillList } from './skills';
 
 const Grid = style.div`
   display: flex;
@@ -13,31 +14,19 @@ const Column = style.div`
   padding:0 15px;
 `;
 
-const frontendSkills = [
-  {title: 'React', proficiency: 90},
-  {title: 'Angular 1 & 2+', proficiency: 80},
-  {title: 'Sass', proficiency: 75},
-  {title: 'Webpack', proficiency: 80},
-  {title: 'Git', proficiency: 70},
-  {title: 'Scrum', proficiency: 75},
-  {title: 'Pug', proficiency: 90},
-  {title: 'Typescript', proficiency: 90},
-  {title: 'Python/Django', proficiency: 65},
-  {title: 'Node.js', proficiency: 90},
-  {title: 'Linux', proficiency: 70},
-  {title: 'Docker', proficiency: 75},
-];
+const skillList =
+  process.env.REACT_APP_POSITION === 'backend'
+    ? backendSkillList
+    : frontendSkillList;
 
 const Skill = () => (
   <div>
-    <h1 className="section-header">
-      Skills
-    </h1>
+    <h1 className="section-header">Skills</h1>
     <Grid>
-      {frontendSkills.map(skill => (
-        <Column>
-          <SkillBar proficiency={skill.proficiency} title={skill.title}/>
-          <Separator className="m-t-20"/>
+      {skillList.map((skill, index) => (
+        <Column key={index}>
+          <SkillBar proficiency={skill.proficiency} title={skill.title} />
+          <Separator className="m-t-20" />
         </Column>
       ))}
     </Grid>

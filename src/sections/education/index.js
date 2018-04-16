@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FaCalendar} from 'react-icons/lib/fa';
+import { FaCalendar } from 'react-icons/lib/fa';
 
 const Degree = styled.p`
   font-size: 24px;
@@ -8,7 +8,7 @@ const Degree = styled.p`
 `;
 
 const Info = styled.div`
-  flex-basis: 70%
+  flex-basis: 70%;
 `;
 
 const ContainerGPA = styled.div`
@@ -31,9 +31,7 @@ const TitleGPA = styled.p`
 
 const Education = () => (
   <div>
-    <h1 className="section-header">
-      Education
-    </h1>
+    <h1 className="section-header">Education</h1>
 
     <div className="flex">
       <Info>
@@ -42,13 +40,16 @@ const Education = () => (
           <strong className="title">Salam high school</strong>
         </div>
         <div className="m-t-4">
-          <FaCalendar/> 2014-2015
+          <FaCalendar /> 2014-2015
         </div>
       </Info>
       <ContainerGPA>
         <GPA>
           <TitleGPA className="gray">GPA</TitleGPA>
-          <p><span className="bold">19.5</span> <span className="gray">/ 20</span></p>
+          <p>
+            <span className="bold">19.5</span>{' '}
+            <span className="gray">/ 20</span>
+          </p>
         </GPA>
       </ContainerGPA>
     </div>
