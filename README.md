@@ -6,4 +6,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     npm start
 ```
 ### Generate PDF
-press Ctrl+P and then in the settings set margins to None.
+press Ctrl+P and then in the settings set margins to None and tick the checkbox next to graphical background.
