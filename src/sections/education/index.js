@@ -40,7 +40,7 @@ const Education = () => (
           <strong className="title">Salam high school</strong>
         </div>
         <div className="m-t-4">
-          <FaCalendar /> 2014-2015
+          <FaCalendar /> 2012-2015
         </div>
       </Info>
       <ContainerGPA>

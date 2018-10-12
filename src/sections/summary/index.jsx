@@ -5,15 +5,6 @@ const getFormattedWorkExprience = startDate => {
   return differenceInCalendarYears(new Date(), startDate);
 };
 
-const isBackend = process.env.REACT_APP_POSITION === 'backend';
-const isFrontend = !isBackend;
-const technologies = isBackend
-  ? 'node.js, elasticsearch, redis'
-  : 'react, angular';
-const interest = isBackend
-  ? 'scalable microservices'
-  : 'progressive web applications';
-
 const Summary = () => {
   const age = differenceInCalendarYears(new Date(), new Date(1998, 2, 14));
   const workingYears = getFormattedWorkExprience(new Date(2015, 6, 1));
@@ -21,12 +12,10 @@ const Summary = () => {
     <div>
       <h1 className="section-header">Summary</h1>
       <p className="m-t-10">
-        a {age} year old self-taught full-stack web developer with{' '}
-        {workingYears}+ years of experience using various cutting-edge
-        technologies such as {technologies} etc. to develop{' '}
-        {isFrontend && 'responsive'}
-        web applications, who is looking for a full-time position with an
-        interest in developing {interest}.
+        a {age} year old self-taught software engineer with {workingYears}+
+        years of experience in developing maintainable and scalable web
+        applications who is seeking to automate himself out of a job as a site
+        reliability engineer.
       </p>
     </div>
   );

@@ -1,14 +1,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import {
-  FaLinkedinSquare,
-  FaGithub,
-  FaStackOverflow,
-  FaMapMarker,
-  FaEnvelope,
-  FaPhone
-} from 'react-icons/lib/fa';
+import { FaMapMarker, FaEnvelope, FaPhone } from 'react-icons/lib/fa';
 
 const Fullname = styled.h1`
   margin-top 0;
@@ -31,24 +24,12 @@ const Header = () => (
         <FaPhone /> +989021551123
       </span>
       <span>
-        <FaEnvelope /> amiralisobhgol@gmail.com
-      </span>
-      <span>
-        <FaMapMarker /> Tehran, Niavaran
+        <FaMapMarker /> Tehran
       </span>
     </Row>
     <Row className="flex m-t-10">
       <span>
-        <FaLinkedinSquare />
-        <a> bit.ly/2IFuvWV</a>
-      </span>
-      <span>
-        <FaGithub />
-        <a> bit.ly/2GJfp6e</a>
-      </span>
-      <span>
-        <FaStackOverflow />
-        <a> bit.ly/2GKsPL6</a>
+        <FaEnvelope /> amiralisobhgol@gmail.com
       </span>
     </Row>
   </div>

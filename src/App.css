@@ -11,7 +11,8 @@ body {
 }
 
 .section-header {
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
+  padding-bottom: 5px;
 }
 
 .m-t-4 {

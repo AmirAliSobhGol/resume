@@ -2,7 +2,7 @@ import React from 'react';
 import style from 'styled-components';
 import SkillBar from './skillbar';
 import Separator from '../../components/separator';
-import { frontendSkillList, backendSkillList } from './skills';
+import { skillList } from './skills';
 
 const Grid = style.div`
   display: flex;
@@ -13,11 +13,6 @@ const Column = style.div`
   flex-basis: 33%;
   padding:0 15px;
 `;
-
-const skillList =
-  process.env.REACT_APP_POSITION === 'backend'
-    ? backendSkillList
-    : frontendSkillList;
 
 const Skill = () => (
   <div>
