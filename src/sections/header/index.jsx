@@ -21,15 +21,10 @@ const Header = () => (
     <Fullname>Amirali Sobhgol</Fullname>
     <Row className="flex">
       <span>
-        <FaPhone /> +989021551123
-      </span>
-      <span>
-        <FaMapMarker /> Tehran
-      </span>
-    </Row>
-    <Row className="flex m-t-10">
-      <span>
         <FaEnvelope /> amiralisobhgol@gmail.com
+      </span>
+      <span>
+        <FaMapMarker /> Iran
       </span>
     </Row>
   </div>

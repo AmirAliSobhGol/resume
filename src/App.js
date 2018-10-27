@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header, Summary, Experience, Education, Skills } from './sections';
+import { Header, Summary, Experience, Skills } from './sections';
 import styled from 'styled-components';
 import LetterBackground from './images/letter-background.jpg';
 
@@ -18,7 +18,6 @@ class App extends Component {
         <Header />
         <Summary />
         <Experience />
-        <Education />
         <Skills />
       </AppContainer>
     );

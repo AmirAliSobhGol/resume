@@ -13,38 +13,39 @@ const List = styled.ul`
   padding-left: 0;
 `;
 
+const ListItem = styled.li`
+  margin-top: 4px;
+  padding-bottom: 4px;
+`;
+
 const Experience = () => (
   <div>
     <h1 className="section-header">Experience</h1>
     <div>
       <Role>Software engineer</Role>
-      <strong className="title">Bamilo</strong>
+      <strong className="title">Rocket Internet group - IIG</strong>
       <div className="m-t-4">
         <FaCalendar /> 2018 - current
       </div>
       <div className="m-t-10">
-        responsible for setting up the swarm cluster, providing observability
-        into the system, setting up the required tooling for a monorepo,
-        developing some of the services and doing performance optimizations.
-        main achievements are:
         <List>
-          <li>
-            <b>Increased read throughput by 100x</b> and{' '}
-            <b>reduced response latency by 10x</b> by implementing CQRS pattern.
-          </li>
-          <li>
-            <b>Reduced database resource usage</b> and{' '}
-            <b>increased write throughput by 50%</b> via proper sharding.
-          </li>
-          <li>
-            <b>decreased mean time to repair</b> of read services{' '}
-            <b>by 30 minutes</b> and increased message delivery reliability by
-            replacing NATS with rabbitmq
-          </li>
-          <li>
+          <ListItem>
+            Increased read throughput by 195x and reduced response latency by
+            53x by implementing CQRS pattern.
+          </ListItem>
+          <ListItem>
+            increased write throughput by more than 50% via sharding and micro
+            batching.
+          </ListItem>
+          <ListItem>
+            decreased mean time to repair of read services by 20 minutes and
+            increased reliability of message delivery by replacing NATS with
+            rabbitmq.
+          </ListItem>
+          <ListItem>
             increased development speed through leveraging the power of
-            monorepos
-          </li>
+            monorepos.
+          </ListItem>
         </List>
       </div>
     </div>
