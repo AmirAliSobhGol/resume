@@ -12,10 +12,8 @@ const Summary = () => {
     <div>
       <h1 className="section-header">Summary</h1>
       <p className="m-t-10">
-        a {age + 1} year old self-taught software engineer with {workingYears}.5+
-        years of experience in developing maintainable and scalable web
-        applications who is seeking to automate himself out of a job as a site
-        reliability engineer.
+        a {age + 1} year old self-taught SRE with {workingYears}+ years of
+        experience who is seeking to automate himself out of a job.
       </p>
     </div>
   );

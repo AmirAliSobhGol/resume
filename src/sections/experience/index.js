@@ -22,31 +22,60 @@ const Experience = () => (
   <div>
     <h1 className="section-header">Experience</h1>
     <div>
-      <Role>Software engineer</Role>
-      <strong className="title">Rocket Internet group - IIG</strong>
+      <Role>SRE</Role>
+      <strong className="title">Cafebazaar</strong>
       <div className="m-t-4">
-        <FaCalendar /> 2018 - current
+        <FaCalendar /> 2019 - present
       </div>
       <div className="m-t-10">
         <List>
           <ListItem>
-            Increased read throughput by 195x and reduced response latency by
-            53x by implementing CQRS pattern.
+            Increased SLO adoption rate of teams to 50% with more on the way by
+            organizing workshops and pitching the idea to management.
+          </ListItem>
+          <ListItem>
+            reduced false alarms from more than one daily to less than one a
+            week by applying SRE principles.
+          </ListItem>
+          <ListItem>
+            enabled querying of data from a few days to upto a year, increased
+            retention from a month to a year and removed cyclic dependency of
+            our monitoring system by using M3DB, organizing workshops, writing
+            documentation and providing guidance on proper usage.
+          </ListItem>
+        </List>
+        <p>
+          Worked with{' '}
+          <strong>
+            Kubernetes, Nomad, Kafka, Ansible, Prometheus, M3DB, ELK, Golang.
+          </strong>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <Role>Software engineer</Role>
+      <strong className="title">Bamilo - Iran Internet group</strong>
+      <div className="m-t-4">
+        <FaCalendar /> 2018 - 2019
+      </div>
+      <div className="m-t-10">
+        <List>
+          <ListItem>
+            Increased read throughput by 10x and reduced response latency by
+            ~53x by implementing CQRS pattern.
           </ListItem>
           <ListItem>
             increased write throughput by more than 50% via sharding and micro
             batching.
           </ListItem>
-          <ListItem>
-            decreased mean time to repair of read services by 20 minutes and
-            increased reliability of message delivery by replacing NATS with
-            rabbitmq.
-          </ListItem>
-          <ListItem>
-            increased development speed through leveraging the power of
-            monorepos.
-          </ListItem>
         </List>
+        <p>
+          Worked with{' '}
+          <strong>
+            Node.js, Swarm, Elasticsearch, Redis, RabbitMQ, Gitlab CI
+          </strong>
+        </p>
       </div>
     </div>
 
@@ -59,6 +88,12 @@ const Experience = () => (
         <FaCalendar /> 2015 - 2018
       </div>
       <div className="m-t-10" />
+      <p>
+        Worked with{' '}
+        <strong>
+          Node.js, Couchbase, Elasticsearch, K8s, React, Angular 1&2
+        </strong>
+      </p>
     </div>
   </div>
 );
