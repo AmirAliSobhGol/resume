@@ -54,7 +54,7 @@ const Experience = () => (
     </div>
 
     <div>
-      <Role>Software engineer</Role>
+      <Role>Software engineer - SRE</Role>
       <strong className="title">Bamilo - Iran Internet group</strong>
       <div className="m-t-4">
         <FaCalendar /> 2018 - 2019
